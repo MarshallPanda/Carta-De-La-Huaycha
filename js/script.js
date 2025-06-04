@@ -101,7 +101,7 @@ function renderMenu(category) {
 			icon.className = "glyphicon glyphicon-shopping-cart";
 
 			btn.appendChild(icon);
-			btn.appendChild(document.createTextNode(" Commander"));
+			btn.appendChild(document.createTextNode(" Comprar"));
 
 			newDiv.appendChild(nameH3);
 			newDiv.appendChild(image);
