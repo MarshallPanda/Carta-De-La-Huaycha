@@ -1,463 +1,529 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Menu</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet" type="text/css"/>
-  <link href="styles/style.css" rel="stylesheet"/>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Menu</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet" type="text/css" />
+	<link href="styles/style.css" rel="stylesheet" />
 </head>
+
 <body>
-  <div class="container site">
-    <h1 class="text-logo">
-      <span class="glyphicon glyphicon-cutlery"></span>
-      La Huaycha
-      <span class="glyphicon glyphicon-cutlery"></span>
-    </h1>
+	<div class="container site">
+		<h1 class="text-logo">
+			<span class="glyphicon glyphicon-cutlery"></span>
+			La Huaycha
+			<span class="glyphicon glyphicon-cutlery"></span>
+		</h1>
 
-    <nav>
-      <ul class="nav nav-pills">
-        <li class="active"><a href="#All" data-toggle="tab">Menu</a></li>
-        <li><a href="#PlatosTipicos" data-toggle="tab">Platos Tipicos</a></li>
-        <li><a href="#Guarniciones" data-toggle="tab">Guarniciones</a></li>
-		<li><a href="#Refrescos" data-toggle="tab">Refrescos</a></li>
-		<li><a href="#BebidasCalientes" data-toggle="tab">Bebidas Calientes</a></li>
-		<li><a href="#Gaseosas" data-toggle="tab">Gaseosas</a></li>
-		<li><a href="#Cervezas" data-toggle="tab">Cervezas</a></li>
-        <li><a href="#Vinos" data-toggle="tab">Vinos</a></li>
-      </ul>
-    </nav>
+		<nav>
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#All" data-toggle="tab">Menu</a></li>
+				<li><a href="#PlatosTipicos" data-toggle="tab">Platos Tipicos</a></li>
+				<li><a href="#Guarniciones" data-toggle="tab">Guarniciones</a></li>
+				<li><a href="#Refrescos" data-toggle="tab">Refrescos</a></li>
+				<li><a href="#BebidasCalientes" data-toggle="tab">Bebidas Calientes</a></li>
+				<li><a href="#Gaseosas" data-toggle="tab">Gaseosas</a></li>
+				<li><a href="#Cervezas" data-toggle="tab">Cervezas</a></li>
+				<li><a href="#Vinos" data-toggle="tab">Vinos</a></li>
+			</ul>
+		</nav>
+		<div class="tab-content">
+			<div class="tab-pane active" id="All">
+				<div class="row" id="menu-items">
+					<!--	Platos Tipicos -->
 
-    <div class="tab-content">
-      <div class="tab-pane active" id="All">
-        <div class="row" id="menu-items">
-			<!--	Platos Tipicos -->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Choclo con queso</h3>
+							<img src="img/Choclo con queso – S_. 8.00.png" class="img-responsive">
+							<h5>Choclo + queso + salsa</h5>
+							<h4 class="price">S/ 8.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Choclo con queso</h3>
-              <img src="img/Choclo con queso – S_. 8.00.png" class="img-responsive">
-              <h5>Choclo + queso +  salsa</h5>
-              <h4 class="price">S/ 8.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Papa a la huancaína</h3>
+							<img src="img/Papa a la huancaína – S_. 13.00.png" class="img-responsive">
+							<h5>3 papas + queso fresco + ají amarillo + leche + galletas + huevo + aceitunas + sal +
+								aceite</h5>
+							<h4 class="price">S/ 13.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Papa a la huancaína</h3>
-              <img src="img/Papa a la huancaína – S_. 13.00.png" class="img-responsive">
-              <h5>3 papas + queso fresco + ají amarillo + leche + galletas + huevo + aceitunas + sal + aceite</h5>
-              <h4 class="price">S/ 13.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Caldo de gallina</h3>
+							<img src="img/Caldo de gallina – S_. 17.00.png" class="img-responsive">
+							<h5>Gallina + fideos + papa + huevo + kion + cebolla china + sal</h5>
+							<h4 class="price">S/ 17.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Caldo de gallina</h3>
-              <img src="img/Caldo de gallina – S_. 17.00.png" class="img-responsive">
-              <h5>Gallina + fideos + papa + huevo + kion + cebolla china + sal</h5>
-              <h4 class="price">S/ 17.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Ceviche De Trucha frita</h3>
+							<img src="img/Ceviche Trucha frita – S_. 30.00.png" class="img-responsive">
+							<h5>Trucha + limón + cebolla roja + ají limo + sal + cilantro + camote + choclo</h5>
+							<h4 class="price">S/ 30.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Ceviche De Trucha frita</h3>
-              <img src="img/Ceviche Trucha frita – S_. 30.00.png" class="img-responsive">
-              <h5>Trucha + limón + cebolla roja + ají limo + sal + cilantro + camote + choclo</h5>
-              <h4 class="price">S/ 30.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Trucha frita</h3>
+							<img src="img/Trucha frita – S_. 22.00.png" class="img-responsive">
+							<h5>Trucha + sal + ajo + harina + aceite + limón + papa + ensalada</h5>
+							<h4 class="price">S/ 22.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Trucha frita</h3>
-              <img src="img/Trucha frita – S_. 22.00.png" class="img-responsive">
-              <h5>Trucha + sal + ajo + harina + aceite + limón + papa + ensalada</h5>
-              <h4 class="price">S/ 22.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Milanesa De Pollo</h3>
+							<img src="img/Milanesa de pollo – S_. 22.00.png" class="img-responsive">
+							<h5>Dessert: Tarte aux Pommes + Boisson</h5>
+							<h4 class="price">S/ 22.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Milanesa De Pollo</h3>
-              <img src="img/Milanesa de pollo – S_. 22.00.png" class="img-responsive">
-              <h5>Dessert: Tarte aux Pommes + Boisson</h5>
-              <h4 class="price">S/ 22.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Pachamanca 1 Sabores</h3>
+							<img src="img/1 Sabor – S_. 25.00.png" class="img-responsive">
+							<h5>Carne (pollo o cerdo) + papa + camote + habas + choclo + chincho + huacatay + sal + ají
+								+ aceite</h5>
+							<h4 class="price">S/ 25.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Pachamanca 1 Sabores</h3>
-              <img src="img/1 Sabor – S_. 25.00.png" class="img-responsive">
-              <h5>Carne (pollo o cerdo) + papa + camote + habas + choclo + chincho + huacatay + sal + ají + aceite</h5>
-              <h4 class="price">S/ 25.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Pachamanca 2 Sabores</h3>
+							<img src="img/2 Sabores – S_. 40.00.png" class="img-responsive">
+							<h5>Pollo + cerdo + papa + camote + habas + choclo + chincho + huacatay + sal + ají + aceite
+							</h5>
+							<h4 class="price">S/ 40.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Pachamanca 2 Sabores</h3>
-              <img src="img/2 Sabores – S_. 40.00.png" class="img-responsive">
-              <h5>Pollo + cerdo + papa + camote + habas + choclo + chincho + huacatay + sal + ají + aceite</h5>
-              <h4 class="price">S/ 40.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Pachamanca 3 Sabores</h3>
+							<img src="img/3 Sabores – S_. 55.00.png" class="img-responsive">
+							<h5>Pollo + cerdo + res + papa + camote + habas + choclo + chincho + huacatay + sal + ají +
+								aceite</h5>
+							<h4 class="price">S/ 55.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Pachamanca 3 Sabores</h3>
-              <img src="img/3 Sabores – S_. 55.00.png" class="img-responsive">
-              <h5>Pollo + cerdo + res + papa + camote + habas + choclo + chincho + huacatay + sal + ají + aceite</h5>
-              <h4 class="price">S/ 55.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Chancho Al Cilindro</h3>
+							<img src="img/Chancho al cilindro – S_. 28.00.png" class="img-responsive">
+							<h5>Carne de cerdo + sal + pimienta + comino + ajo + ají panca</h5>
+							<h4 class="price">S/ 28.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Chancho Al Cilindro</h3>
-              <img src="img/Chancho al cilindro – S_. 28.00.png" class="img-responsive">
-              <h5>Carne de cerdo + sal + pimienta + comino + ajo + ají panca</h5>
-              <h4 class="price">S/ 28.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Carnero Al Palo</h3>
+							<img src="img/Carnero al palo – S_. 28.00.png" class="img-responsive">
+							<h5>Carnero + sal + ajo + comino + pimienta + vinagre + aceite</h5>
+							<h4 class="price">S/ 28.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Carnero Al Palo</h3>
-              <img src="img/Carnero al palo – S_. 28.00.png" class="img-responsive">
-              <h5>Carnero + sal + ajo + comino + pimienta + vinagre + aceite</h5>
-              <h4 class="price">S/ 28.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+						<div class="menu thumbnail">
+							<h3>Picante de cuy 1/4</h3>
+							<img src="img/Picante de cuy (1_4) – S_. 28.00.png" class="img-responsive">
+							<h5>Cuy 1/4 + ají amarillo + cebolla + ajo + tomate + sal + pimienta + huacatay</h5>
+							<h4 class="price">S/ 28.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
+					<!--	Guarniciones -->
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
-            <div class="menu thumbnail">
-              <h3>Picante de cuy 1/4</h3>
-              <img src="img/Picante de cuy (1_4) – S_. 28.00.png" class="img-responsive">
-              <h5>Cuy 1/4 + ají amarillo + cebolla + ajo + tomate + sal + pimienta + huacatay</h5>
-              <h4 class="price">S/ 28.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
-		  <!--	Guarniciones -->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
+						<div class="menu thumbnail">
+							<h3>Porción de papas sancochadas</h3>
+							<img src="img/Porción de papas sancochadas – S_. 5.00.png" class="img-responsive">
+							<h5>Papas + sal</h5>
+							<h4 class="price">S/ 5.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
-            <div class="menu thumbnail">
-              <h3>Porción de papas sancochadas</h3>
-              <img src="img/Porción de papas sancochadas – S_. 5.00.png" class="img-responsive">
-              <h5>Papas + sal</h5>
-              <h4 class="price">S/ 5.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
+						<div class="menu thumbnail">
+							<h3>Porción De Arroz Blanco o Amarillo</h3>
+							<img src="img/Porción de arroz blanco o amarillo – S_. 4.00.png" class="img-responsive">
+							<h5>Plato de arroz</h5>
+							<h4 class="price">S/ 4.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
-            <div class="menu thumbnail">
-              <h3>Porción De Arroz Blanco o Amarillo</h3>
-              <img src="img/Porción de arroz blanco o amarillo – S_. 4.00.png" class="img-responsive">
-              <h5>Plato de arroz</h5>
-              <h4 class="price">S/ 4.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
+						<div class="menu thumbnail">
+							<h3>Porción De Lechuga</h3>
+							<img src="img/Porción de ensalada de lechuga – S_. 5.00.png" class="img-responsive">
+							<h5>Plato de arroz</h5>
+							<h4 class="price">S/ 5.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
-            <div class="menu thumbnail">
-              <h3>Porción De Lechuga</h3>
-              <img src="img/Porción de ensalada de lechuga – S_. 5.00.png" class="img-responsive">
-              <h5>Plato de arroz</h5>
-              <h4 class="price">S/ 5.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
+						<div class="menu thumbnail">
+							<h3>Porción De Sarza Criolla</h3>
+							<img src="img/Porción de sarza criolla – S_. 6.00.png" class="img-responsive">
+							<h5>Plato de arroz</h5>
+							<h4 class="price">S/ 6.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
-            <div class="menu thumbnail">
-              <h3>Porción De Sarza Criolla</h3>
-              <img src="img/Porción de sarza criolla – S_. 6.00.png" class="img-responsive">
-              <h5>Plato de arroz</h5>
-              <h4 class="price">S/ 6.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
+						<div class="menu thumbnail">
+							<h3>Humita Dulce 2 Unidades</h3>
+							<img src="img/Porción de humita dulce (2 unidades) – S_. 6.00.png" class="img-responsive">
+							<h5>2 Humitas Dulce</h5>
+							<h4 class="price">S/ 6.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
+					<!--	Refrescos -->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
+						<div class="menu thumbnail">
+							<h3>Morada - Jora - Maracuyá</h3>
+							<img src="img/(Morada - Jora - Maracuyá)  1 Litro – S_. 13.00.png" class="img-responsive">
+							<h5>1 Litro</h5>
+							<h4 class="price">S/ 13.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Guarniciones">
-            <div class="menu thumbnail">
-              <h3>Humita Dulce 2 Unidades</h3>
-              <img src="img/Porción de humita dulce (2 unidades) – S_. 6.00.png" class="img-responsive">
-              <h5>2 Humitas Dulce</h5>
-              <h4 class="price">S/ 6.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
-		  <!--	Refrescos -->
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
-            <div class="menu thumbnail">
-              <h3>Morada - Jora - Maracuyá</h3>
-              <img src="img/(Morada - Jora - Maracuyá)  1 Litro – S_. 13.00.png" class="img-responsive">
-              <h5>1 Litro</h5>
-              <h4 class="price">S/ 13.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
+						<div class="menu thumbnail">
+							<h3>Morada - Jora - Maracuyá</h3>
+							<img src="img/(Morada - Jora - Maracuyá)  1_2 Litro – S_. 7.00.png" class="img-responsive">
+							<h5>1/2 Litro</h5>
+							<h4 class="price">S/ 7.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
-            <div class="menu thumbnail">
-              <h3>Morada - Jora - Maracuyá</h3>
-              <img src="img/(Morada - Jora - Maracuyá)  1_2 Litro – S_. 7.00.png" class="img-responsive">
-              <h5>1/2 Litro</h5>
-              <h4 class="price">S/ 7.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
+						<div class="menu thumbnail">
+							<h3>Jugo De Naranja</h3>
+							<img src="img/1 Litro de jugo de naranja – S_. 15.00.png" class="img-responsive">
+							<h5>1 Litro Jugo De Naranja</h5>
+							<h4 class="price">S/ 15.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
-            <div class="menu thumbnail">
-              <h3>Jugo De Naranja</h3>
-              <img src="img/1 Litro de jugo de naranja – S_. 15.00.png" class="img-responsive">
-              <h5>1 Litro Jugo De Naranja</h5>
-              <h4 class="price">S/ 15.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
+						<div class="menu thumbnail">
+							<h3>Jugo De Naranja</h3>
+							<img src="img/1_2 Litro de jugo de naranja – S_. 8.00.png" class="img-responsive">
+							<h5> 1/2 Jugo De Naranja</h5>
+							<h4 class="price">S/ 8.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
+					<!--	Bebidas Calientes -->
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Refrescos">
-            <div class="menu thumbnail">
-              <h3>Jugo De Naranja</h3>
-              <img src="img/1_2 Litro de jugo de naranja – S_. 8.00.png" class="img-responsive">
-              <h5> 1/2 Jugo De Naranja</h5>
-              <h4 class="price">S/ 8.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
-		  <!--	Bebidas Calientes -->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="BebidasCalientes">
+						<div class="menu thumbnail">
+							<h3>Mates</h3>
+							<img src="img/Mates (Anís - Manzanilla - Coca - Té - Muña) – S_. 3.00.png"
+								class="img-responsive">
+							<h5>Anís - Manzanilla - Coca - Té - Muña</h5>
+							<h4 class="price">S/ 3.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="BebidasCalientes">
-            <div class="menu thumbnail">
-              <h3>Mates</h3>
-              <img src="img/Mates (Anís - Manzanilla - Coca - Té - Muña) – S_. 3.00.png" class="img-responsive">
-              <h5>Anís - Manzanilla - Coca - Té - Muña</h5>
-              <h4 class="price">S/ 3.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="BebidasCalientes">
+						<div class="menu thumbnail">
+							<h3>Café</h3>
+							<img src="img/Café – S_. 4.00.png" class="img-responsive">
+							<h5> 1 taza Café</h5>
+							<h4 class="price">S/ 4.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
+					<!--	Gaseosas-->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
+						<div class="menu thumbnail">
+							<h3>Gaseosa</h3>
+							<img src="img/GASEOSAS Personal – S_. 3.00.png" class="img-responsive">
+							<h5> Personal</h5>
+							<h4 class="price">S/ 3.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="BebidasCalientes">
-            <div class="menu thumbnail">
-              <h3>Café</h3>
-              <img src="img/Café – S_. 4.00.png" class="img-responsive">
-              <h5> 1 taza Café</h5>
-              <h4 class="price">S/ 4.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
-		  <!--	Gaseosas-->
-			<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
-            <div class="menu thumbnail">
-              <h3>Gaseosa</h3>
-              <img src="img/GASEOSAS Personal – S_. 3.00.png" class="img-responsive">
-              <h5> Personal</h5>
-              <h4 class="price">S/ 3.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
+						<div class="menu thumbnail">
+							<h3>Agua mineral</h3>
+							<img src="img/Agua mineral – S_. 2.50.png" class="img-responsive">
+							<h5> Personal</h5>
+							<h4 class="price">S/ 2.50</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
-            <div class="menu thumbnail">
-              <h3>Agua mineral</h3>
-              <img src="img/Agua mineral – S_. 2.50.png" class="img-responsive">
-              <h5> Personal</h5>
-              <h4 class="price">S/ 2.50</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
+						<div class="menu thumbnail">
+							<h3>Gordita</h3>
+							<img src="img/Gordita - Jumbo – S_. 4.00.png" class="img-responsive">
+							<h5>Gordita - Jumbo</h5>
+							<h4 class="price">S/ 4.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
-            <div class="menu thumbnail">
-              <h3>Gordita</h3>
-              <img src="img/Gordita - Jumbo – S_. 4.00.png" class="img-responsive">
-              <h5>Gordita - Jumbo</h5>
-              <h4 class="price">S/ 4.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
+						<div class="menu thumbnail">
+							<h3>Gaseosa</h3>
+							<img src="img/1 Litro – S_. 8.00.png" class="img-responsive">
+							<h5> 1 Litro</h5>
+							<h4 class="price">S/ 8.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
-            <div class="menu thumbnail">
-              <h3>Gaseosa</h3>
-              <img src="img/1 Litro – S_. 8.00.png" class="img-responsive">
-              <h5> 1 Litro</h5>
-              <h4 class="price">S/ 8.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
+						<div class="menu thumbnail">
+							<h3>Gaseosa</h3>
+							<img src="img/1 1_2 Litro – S_. 10.00.png" class="img-responsive">
+							<h5> 1 1/2 Litro</h5>
+							<h4 class="price">S/ 4.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
-            <div class="menu thumbnail">
-              <h3>Gaseosa</h3>
-              <img src="img/1 1_2 Litro – S_. 10.00.png" class="img-responsive">
-              <h5> 1 1/2 Litro</h5>
-              <h4 class="price">S/ 4.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
+						<div class="menu thumbnail">
+							<h3>Gaseosa</h3>
+							<img src="img/3 Litros – S_. 15.00.png" class="img-responsive">
+							<h5> 3 Litros </h5>
+							<h4 class="price">S/ 15.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
+					<!--	Cervezas-->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
+						<div class="menu thumbnail">
+							<h3>Corona</h3>
+							<img src="img/Corona 330 ml – S_. 7.00.png" class="img-responsive">
+							<h5>1 botella 330 ml</h5>
+							<h4 class="price">S/ 7.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Gaseosas">
-            <div class="menu thumbnail">
-              <h3>Gaseosa</h3>
-              <img src="img/3 Litros – S_. 15.00.png" class="img-responsive">
-              <h5> 3 Litros </h5>
-              <h4 class="price">S/ 15.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
-		  <!--	Cervezas-->
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
-            <div class="menu thumbnail">
-              <h3>Corona</h3>
-              <img src="img/Corona 330 ml – S_. 7.00.png" class="img-responsive">
-              <h5>1 botella 330 ml</h5>
-              <h4 class="price">S/ 7.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
+						<div class="menu thumbnail">
+							<h3>Cusqueña Negra</h3>
+							<img src="img/Cusqueña Negra – S_. 10.00.png" class="img-responsive">
+							<h5>1 botella</h5>
+							<h4 class="price">S/ 10.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
-            <div class="menu thumbnail">
-              <h3>Cusqueña Negra</h3>
-              <img src="img/Cusqueña Negra – S_. 10.00.png" class="img-responsive">
-              <h5>1 botella</h5>
-              <h4 class="price">S/ 10.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
+						<div class="menu thumbnail">
+							<h3>Cusqueña Trigo</h3>
+							<img src="img/Cusqueña Trigo – S_. 10.00.png" class="img-responsive">
+							<h5>1 botella</h5>
+							<h4 class="price">S/ 10.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
-            <div class="menu thumbnail">
-              <h3>Cusqueña Trigo</h3>
-              <img src="img/Cusqueña Trigo – S_. 10.00.png" class="img-responsive">
-              <h5>1 botella</h5>
-              <h4 class="price">S/ 10.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
+						<div class="menu thumbnail">
+							<h3>Pilsen Callao</h3>
+							<img src="img/Pilsen – S_. 9.00.png" class="img-responsive">
+							<h5>1 botella</h5>
+							<h4 class="price">S/ 9.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
-            <div class="menu thumbnail">
-              <h3>Pilsen Callao</h3>
-              <img src="img/Pilsen – S_. 9.00.png" class="img-responsive">
-              <h5>1 botella</h5>
-              <h4 class="price">S/ 9.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
+						<div class="menu thumbnail">
+							<h3>Cristal</h3>
+							<img src="img/Cristal – S_. 8.00.png" class="img-responsive">
+							<h5>1 botella</h5>
+							<h4 class="price">S/ 8.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
+					<!--	Vinos-->
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
+						<div class="menu thumbnail">
+							<h3>Borgoña Queirolo</h3>
+							<img src="img/Borgoña Queirolo – S_. 25.00.png" class="img-responsive">
+							<h5>1 botella</h5>
+							<h4 class="price">S/ 25.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Cervezas">
-            <div class="menu thumbnail">
-              <h3>Cristal</h3>
-              <img src="img/Cristal – S_. 8.00.png" class="img-responsive">
-              <h5>1 botella</h5>
-              <h4 class="price">S/ 8.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
-		  <!--	Vinos-->
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
-            <div class="menu thumbnail">
-              <h3>Borgoña Queirolo</h3>
-              <img src="img/Borgoña Queirolo – S_. 25.00.png" class="img-responsive">
-              <h5>1 botella</h5>
-              <h4 class="price">S/ 25.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
+						<div class="menu thumbnail">
+							<h3>Rosé Queirolo</h3>
+							<img src="img/Rosé Queirolo – S_. 28.00.png" class="img-responsive">
+							<h5>1 botella</h5>
+							<h4 class="price">S/ 28.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
-            <div class="menu thumbnail">
-              <h3>Rosé Queirolo</h3>
-              <img src="img/Rosé Queirolo – S_. 28.00.png" class="img-responsive">
-              <h5>1 botella</h5>
-              <h4 class="price">S/ 28.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
+						<div class="menu thumbnail">
+							<h3>Tabernero Borgoña</h3>
+							<img src="img/Tabernero Borgoña Semi Seco – S_. 28.00.png" class="img-responsive">
+							<h5>Semi Seco - 1 botella</h5>
+							<h4 class="price">S/ 28.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
-            <div class="menu thumbnail">
-              <h3>Tabernero Borgoña</h3>
-              <img src="img/Tabernero Borgoña Semi Seco – S_. 28.00.png" class="img-responsive">
-              <h5>Semi Seco - 1 botella</h5>
-              <h4 class="price">S/ 28.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
+						<div class="menu thumbnail">
+							<h3>Tabernero Rosé</h3>
+							<img src="img/Tabernero Rosé Semi Seco – S_. 30.00.png" class="img-responsive">
+							<h5>Semi Seco - 1 botella</h5>
+							<h4 class="price">S/ 30.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
-            <div class="menu thumbnail">
-              <h3>Tabernero Rosé</h3>
-              <img src="img/Tabernero Rosé Semi Seco – S_. 30.00.png" class="img-responsive">
-              <h5>Semi Seco - 1 botella</h5>
-              <h4 class="price">S/ 30.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+					<div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
+						<div class="menu thumbnail">
+							<h3>Tacama Rosé</h3>
+							<img src="img/Tacama Semi Seco Rosé – S_. 35.00.png" class="img-responsive">
+							<h5>Semi Seco - 1 botella</h5>
+							<h4 class="price">S/ 35.00</h4>
+							<button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span>
+								Comprar</button>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
-            <div class="menu thumbnail">
-              <h3>Tacama Rosé</h3>
-              <img src="img/Tacama Semi Seco Rosé – S_. 35.00.png" class="img-responsive">
-              <h5>Semi Seco - 1 botella</h5>
-              <h4 class="price">S/ 35.00</h4>
-              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
-            </div>
-          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Botón flotante del carrito -->
+	<button id="open-cart" class="cart-fab">
+		🛒 Carrito (<span id="cart-count">0</span>)
+	</button>
 
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- CARRITO MODAL HTML -->
+	<div id="cart-modal" class="cart-modal">
+		<div class="cart-content">
+			<span id="close-cart" class="close">&times;</span>
+			<h3>🛒 Tu Carrito</h3>
 
-  <!-- Filtro por categoría -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      filterMenu("All");
-      document.querySelectorAll(".nav-pills li a").forEach(link => {
-        link.addEventListener("click", e => {
-          e.preventDefault();
-          document.querySelectorAll(".nav-pills li").forEach(li => li.classList.remove("active"));
-          link.parentElement.classList.add("active");
-          const category = link.getAttribute("href").substring(1);
-          filterMenu(category === "All" ? "All" : category);
-        });
-      });
-    });
+			<table class="cart-table">
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Precio</th>
+						<th>Cant.</th>
+						<th>Subtotal</th>
+					</tr>
+				</thead>
+				<tbody id="cart-items"></tbody>
+			</table>
 
-    function filterMenu(category) {
-      const items = document.querySelectorAll(".menu-item");
-      items.forEach(item => {
-        const itemCategory = item.getAttribute("data-category");
-        item.style.display = (category === "All" || itemCategory === category) ? "block" : "none";
-      });
-    }
-  </script>
+			<div class="cart-body">
+				<div class="cart-summary">
+					<div class="discount-box">
+						<label for="discount">Descuento:</label>
+						<input type="text" id="discount" placeholder="% o monto fijo">
+						<button onclick="applyDiscount()">Aplicar</button>
+					</div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+					<div class="totals">
+						<p><strong>Subtotal:</strong> S/ <span id="subtotal-amount">0.00</span></p>
+						<p><strong>Total:</strong> S/ <span id="cart-total">0.00</span></p>
+					</div>
+
+					<button class="checkout-btn">Proceder al Pago</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
+
 </html>
