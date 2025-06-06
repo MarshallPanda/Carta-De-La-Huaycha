@@ -104,3 +104,6 @@ body
     color: red;
 }
 
+.menu.thumbnail {
+    text-align: center;
+}

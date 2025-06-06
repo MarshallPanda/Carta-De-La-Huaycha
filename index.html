@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles/style.css"/>
-	<title>Menu</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Menu</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet" type="text/css"/>
+  <link href="styles/style.css" rel="stylesheet"/>
 </head>
 <body>
-	<div class="container site">
-		<h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span>La Huaycha<span class="glyphicon glyphicon-cutlery"></span></h1>
+  <div class="container site">
+    <h1 class="text-logo">
+      <span class="glyphicon glyphicon-cutlery"></span>
+      La Huaycha
+      <span class="glyphicon glyphicon-cutlery"></span>
+    </h1>
 
-		<nav>
-			<ul class="nav nav-pills">
-				<li role="presentation" class="active"><a href="#menu" data-toggle="tab">Menu</a></li>
-				<li role="presentation"><a href="#PlatosTipicos" data-toggle="tab">PlatosTipicos</a></li>
-				<li role="presentation"><a href="#Guarniciones" data-toggle="tab">Guarniciones</a></li>
-        <li role="presentation"><a href="#Refrescos" data-toggle="tab">Refrescos</a></li>
-				<li role="presentation"><a href="#BebidasCalientes" data-toggle="tab">BebidasCalientes</a></li>
-				<li role="presentation"><a href="#Gaseosas" data-toggle="tab">Gaseosas</a></li>
-				<li role="presentation"><a href="#Cervezas" data-toggle="tab">Cervezas</a></li>
-        <li role="presentation"><a href="#Vinos" data-toggle="tab">Vinos</a></li>
-			</ul>
-		</nav>
+    <nav>
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#All" data-toggle="tab">Menu</a></li>
+        <li><a href="#PlatosTipicos" data-toggle="tab">Platos Tipicos</a></li>
+        <li><a href="#Guarniciones" data-toggle="tab">Guarniciones</a></li>
+		<li><a href="#Refrescos" data-toggle="tab">Refrescos</a></li>
+		<li><a href="#BebidasCalientes" data-toggle="tab">Bebidas Calientes</a></li>
+		<li><a href="#Gaseosas" data-toggle="tab">Gaseosas</a></li>
+		<li><a href="#Cervezas" data-toggle="tab">Cervezas</a></li>
+        <li><a href="#Vinos" data-toggle="tab">Vinos</a></li>
+      </ul>
+    </nav>
 
-		<div class="tab-content">
-			<div class="tab-pane active" id="menu">
-				<div class="row">
-					<div id="menu-items"></div>
-				</div>
-			</div>
-			<div class="tab-pane" id="PlatosTipicos"></div>
-			<div class="tab-pane" id="Guarniciones"></div>
-			<div class="tab-pane" id="Refrescos"></div>
-			<div class="tab-pane" id="BebidasCalientes"></div>
-			<div class="tab-pane" id="Gaseosas"></div>
-      <div class="tab-pane" id="Cervezas"></div>
-      <div class="tab-pane" id="Vinos"></div>
-		</div>
-	</div>
+    <div class="tab-content">
+      <div class="tab-pane active" id="All">
+        <div class="row" id="menu-items">
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+            <div class="menu thumbnail">
+              <h3>Choclo con queso</h3>
+              <img src="img/Choclo con queso – S_. 8.00.png" class="img-responsive">
+              <h5>Choclo + queso +  salsa</h5>
+              <h4 class="price">S/ 8.00</h4>
+              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+            <div class="menu thumbnail">
+              <h3>Papa a la huancaína</h3>
+              <img src="img/Papa a la huancaína – S_. 13.00.png" class="img-responsive">
+              <h5>3 papas + queso fresco + ají amarillo + leche + galletas + huevo + aceitunas + sal + aceite</h5>
+              <h4 class="price">S/ 13.00</h4>
+              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+            <div class="menu thumbnail">
+              <h3>Caldo de gallina</h3>
+              <img src="img/Caldo de gallina – S_. 17.00.png" class="img-responsive">
+              <h5>Gallina + fideos + papa + huevo + kion + cebolla china + sal</h5>
+              <h4 class="price">S/ 17.00</h4>
+              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+            <div class="menu thumbnail">
+              <h3>Ceviche De Trucha frita</h3>
+              <img src="img/Ceviche Trucha frita – S_. 30.00.png frita – S_. 22.00.png" class="img-responsive">
+              <h5>Trucha + limón + cebolla roja + ají limo + sal + cilantro + camote + choclo</h5>
+              <h4 class="price">S/ 30.00</h4>
+              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 menu-item" data-category="PlatosTipicos">
+            <div class="menu thumbnail">
+              <h3>Trucha frita</h3>
+              <img src="img/Trucha frita – S_. 22.00.png" class="img-responsive">
+              <h5>Trucha + sal + ajo + harina + aceite + limón + papa + ensalada</h5>
+              <h4 class="price">S/ 22.00</h4>
+              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 menu-item" data-category="Vinos">
+            <div class="menu thumbnail">
+              <h3>Menu Classic</h3>
+              <img src="img/4813396.png" class="img-responsive">
+              <h5>Dessert: Tarte aux Pommes + Boisson</h5>
+              <h4 class="price">S/ 4.50</h4>
+              <button class="btn-order"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filtro por categoría -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      filterMenu("All");
+      document.querySelectorAll(".nav-pills li a").forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          document.querySelectorAll(".nav-pills li").forEach(li => li.classList.remove("active"));
+          link.parentElement.classList.add("active");
+          const category = link.getAttribute("href").substring(1);
+          filterMenu(category === "All" ? "All" : category);
+        });
+      });
+    });
+
+    function filterMenu(category) {
+      const items = document.querySelectorAll(".menu-item");
+      items.forEach(item => {
+        const itemCategory = item.getAttribute("data-category");
+        item.style.display = (category === "All" || itemCategory === category) ? "block" : "none";
+      });
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
