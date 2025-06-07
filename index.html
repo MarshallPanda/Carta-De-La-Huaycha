@@ -8,6 +8,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link href="styles/style.css" rel="stylesheet" />
 </head>
 
@@ -478,15 +479,14 @@
 	</div>
 	<!-- Botón flotante del carrito -->
 	<button id="open-cart" class="cart-fab">
-		🛒 Carrito (<span id="cart-count">0</span>)
+		<i class="fas fa-shopping-cart"></i>
 	</button>
 
 	<!-- CARRITO MODAL HTML -->
 	<div id="cart-modal" class="cart-modal">
 		<div class="cart-content">
 			<span id="close-cart" class="close">&times;</span>
-			<h3>🛒 Tu Carrito</h3>
-
+			<i class="fas fa-shopping-cart">Carrito</i>
 			<table class="cart-table">
 				<thead>
 					<tr>
@@ -519,7 +519,7 @@
 	</div>
 
 
-	<!-- Bootstrap JS -->
+	<!-- Bootstrap DeJS -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>

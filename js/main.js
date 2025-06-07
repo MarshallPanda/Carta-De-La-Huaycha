@@ -1,25 +1,15 @@
-// main.js (versión completa y corregida)
-
 document.addEventListener("DOMContentLoaded", () => {
   inicializarFiltros();
   inicializarCarrito();
 });
 
-// ------------------------
-// FILTRO DE CATEGORÍAS
-// ------------------------
+// ----- FILTRO DE CATEGORÍAS -----
 function inicializarFiltros() {
   filterMenu("All");
-
-  const links = document.querySelectorAll(".nav-pills li a");
-  links.forEach(link => {
+  document.querySelectorAll(".nav-pills li a").forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
-
-      document.querySelectorAll(".nav-pills li").forEach(li =>
-        li.classList.remove("active")
-      );
-
+      document.querySelectorAll(".nav-pills li").forEach(li => li.classList.remove("active"));
       link.parentElement.classList.add("active");
 
       const category = link.getAttribute("href").substring(1);
@@ -32,30 +22,27 @@ function filterMenu(category) {
   const items = document.querySelectorAll(".menu-item");
   items.forEach(item => {
     const itemCategory = item.getAttribute("data-category");
-    item.style.display = (category === "All" || itemCategory === category)
-      ? "block"
-      : "none";
+    item.style.display = (category === "All" || itemCategory === category) ? "block" : "none";
   });
 }
 
-// ------------------------
-// CARRITO
-// ------------------------
+// ----- CARRITO DE COMPRAS -----
 let cartItems = [];
 let descuento = 0;
-
-let cartTableBody, cartTotal, cartCount, modal, openCartBtn, closeCartBtn;
+let cartTableBody, subtotalSpan, cartTotalSpan, cartCount, modal, openCartBtn, closeCartBtn;
 
 function inicializarCarrito() {
   cartTableBody = document.getElementById("cart-items");
-  cartTotal = document.getElementById("cart-total");
+  subtotalSpan = document.getElementById("subtotal-amount");
+  cartTotalSpan = document.getElementById("cart-total");
   cartCount = document.getElementById("cart-count");
   modal = document.getElementById("cart-modal");
   openCartBtn = document.getElementById("open-cart");
   closeCartBtn = document.getElementById("close-cart");
 
-  openCartBtn.addEventListener("click", () => modal.style.display = "block");
+  openCartBtn.addEventListener("click", () => modal.style.display = "flex");
   closeCartBtn.addEventListener("click", () => modal.style.display = "none");
+
   window.addEventListener("click", (e) => {
     if (e.target === modal) modal.style.display = "none";
   });
@@ -78,19 +65,14 @@ function inicializarCarrito() {
     });
   });
 
-  const discountInput = document.getElementById("discount-btn");
-  if (discountInput) {
-    discountInput.addEventListener("click", applyDiscount);
+  const discountBtn = document.getElementById("discount-btn");
+  if (discountBtn) {
+    discountBtn.addEventListener("click", applyDiscount);
   }
 }
 
 function updateCart() {
-  const tbody = document.getElementById("cart-items");
-  const subtotalSpan = document.getElementById("subtotal-amount");
-  const totalSpan = document.getElementById("cart-total");
-  const count = document.getElementById("cart-count");
-
-  tbody.innerHTML = "";
+  cartTableBody.innerHTML = "";
   let subtotal = 0;
   let totalItems = 0;
 
@@ -110,32 +92,32 @@ function updateCart() {
       </td>
       <td>S/ ${itemSubtotal.toFixed(2)}</td>
     `;
-    tbody.appendChild(row);
+    cartTableBody.appendChild(row);
   });
 
   const total = subtotal - descuento;
   subtotalSpan.textContent = subtotal.toFixed(2);
-  totalSpan.textContent = total < 0 ? "0.00" : total.toFixed(2);
-  count.textContent = totalItems;
+  cartTotalSpan.textContent = total < 0 ? "0.00" : total.toFixed(2);
+  cartCount.textContent = totalItems;
 }
 
 function changeQty(index, delta) {
   cartItems[index].quantity += delta;
-  if (cartItems[index].quantity < 1) cartItems.splice(index, 1);
+  if (cartItems[index].quantity < 1) {
+    cartItems.splice(index, 1);
+  }
   updateCart();
 }
 
 function applyDiscount() {
   const input = document.getElementById("discount").value;
   const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
   if (input.endsWith("%")) {
     const percent = parseFloat(input.replace("%", ""));
     descuento = subtotal * (percent / 100);
   } else {
     descuento = parseFloat(input);
   }
-
   if (isNaN(descuento)) descuento = 0;
   updateCart();
 }

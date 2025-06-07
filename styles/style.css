@@ -211,20 +211,24 @@ body {
 
 /* Botón flotante */
 .cart-fab {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: #e7480f;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 12px 20px;
-    border-radius: 50px;
-    border: none;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e7480f;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
+
 
 /* Modal del carrito */
 .cart-modal {
@@ -306,7 +310,7 @@ body {
 
 .checkout-btn {
   width: 100%;
-  background-color: #007bff;
+  background-color: #f85711;
   color: white;
   padding: 12px;
   font-size: 16px;
@@ -316,7 +320,7 @@ body {
 }
 
 .checkout-btn:hover {
-  background-color: #0056b3;
+  background-color: #f86e2e;
 }
 
 .cart-table img {
